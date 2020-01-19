@@ -1,5 +1,8 @@
+package org.wecancodeit;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import VirtualPet;
 
 class VirtualPetTest {
 //arrange	
@@ -37,13 +40,36 @@ class VirtualPetTest {
 		assertEquals(10, result);
 	}
 
-@Test
-public void eatShouldIncreaseBy1AfterEat() {
-	// act
-	int afterEat = underTest.forEat();
-	//underTest.forEat(); // void - just eats
-	int result = underTest.forEat();
-	// assert
-	assertEquals(afterEat, result);
-}
+	@Test
+	public void eatShouldIncreaseBy1AfterEat() {
+		// act
+		int afterEat = underTest.forEat();
+		underTest.forEat(); // void - just eats
+		int result = underTest.forEat();
+		// assert
+		assertEquals(afterEat, result);
+	}
+//	
+//	@Test
+//	public void eatShouldIncreaseBy1AfterEat() {
+//		// act
+//		int afterEat = underTest.forEat();
+//		underTest.forEat(); // void - just eats
+//		int result = underTest.forEat();
+//		// assert
+//		assertEquals(afterEat, result);
+//	}
+//	@Test
+//	public void eatShouldIncreaseBy1AfterEat() {
+//		// act
+//		int afterEat = underTest.forEat();
+//		underTest.forEat(); // void - just eats
+//		int result = underTest.forEat();
+//		// assert
+//		assertEquals(afterEat, result);
+//	}
+	
+	
+	
+	
 }

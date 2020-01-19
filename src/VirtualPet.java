@@ -2,10 +2,10 @@
 public class VirtualPet {
 
 	//private String petName;
-	private int eat;
-	private int sleep;
-	private int fun;
-	private int potty;
+	private int eat=10;
+	private int sleep=10;
+	private int fun=10;
+	private int potty=10;
 
 		public VirtualPet(int eat, int sleep, int fun, int potty) {
 			this.eat = eat;
@@ -38,28 +38,32 @@ public class VirtualPet {
 		}
 
 		public void fedPet() {
-			this.eat += 3;
-			this.sleep += 1;
-			this.potty -= 4;
+//			return this.eat += 3;
+//			return this.sleep += 1;
+//			return this.potty -= 4;
+			return;
 		}
 
 		public void goPotty() {
-			this.eat -= 2;
-			this.fun += 2;
-			this.potty += 4;
+//			return this.eat -= 2;
+//			return this.fun += 2;
+//			return this.potty += 4;
+			return;
 		}
 
 
 		public void haveFun() {
-			this.sleep -= 3;
-			this.eat -= 2;
-			this.fun += 4;
+//			return this.sleep -= 3;
+//			return this.eat -= 2;
+//			return this.fun += 4;
+			return;
 					
 		}
 		public void getSleep() {
-			this.sleep += 2;
-			this.potty -=2;
-			this.eat += 2;
+//			return this.sleep += 2;
+//			return this.potty -=2;
+//			return this.eat += 2;
+			return;
 		}
 
 

@@ -7,7 +7,7 @@ public class VirtualPet {
 	private int eat = 10;
 	private int sleep = 10;
 	private int fun = 10;
-	private int potty = 10;
+	private int water = 10;
 	private String petName;
 	private String petDescription;
  
@@ -19,26 +19,26 @@ public class VirtualPet {
 		// default constructor - was invisible before it had friends
 	}
 	public VirtualPet(String petNameParameter, String petDescriptionParameter, int eatParameter, 
-			int sleepParameter, int funParameter, int pottyParameter) {
+			int sleepParameter, int funParameter, int waterParameter) {
 		this.petName = petNameParameter;
 		this.petDescription = petDescriptionParameter;
 		this.eat = eatParameter;
-		this.potty = pottyParameter;
+		this.water = waterParameter;
 		this.fun = funParameter;
 	}
 
-	public VirtualPet(int eat, int sleep, int fun, int potty) {
+	public VirtualPet(int eat, int sleep, int fun, int water) {
 		this.eat = eat;
 		this.sleep = sleep;
 		this.fun = fun;
-		this.potty = potty;
+		this.water = water;
 	}
 
 	public void tick() {
 		eat--;
 		sleep--;
 		fun--;
-		potty--;
+		water--;
 	}
 
 	public int forEat() {
@@ -53,21 +53,21 @@ public class VirtualPet {
 		return fun;
 	}
 
-	public int forPotty() {
-		return potty;
+	public int forDrink() {
+		return water;
 	}
 
 	public void fedPet() {
 //			return this.eat += 3;
 //			return this.sleep += 1;
-//			return this.potty -= 4;
+//			return this.water -= 4;
 		return;
 	}
 
-	public void goPotty() {
+	public void getDrink() {
 //			return this.eat -= 2;
 //			return this.fun += 2;
-//			return this.potty += 4;
+//			return this.water += 4;
 		return;
 	}
 
@@ -81,7 +81,7 @@ public class VirtualPet {
 
 	public void getSleep() {
 //			return this.sleep += 2;
-//			return this.potty -=2;
+//			return this.water -=2;
 //			return this.eat += 2;
 		return;
 	}

@@ -12,7 +12,7 @@ class VirtualPetTest {
 		// assert
 		assertEquals(10, result);
 	}
-	
+
 	@Test
 	public void sleepShouldBe10AtStart() {
 		// act
@@ -28,7 +28,7 @@ class VirtualPetTest {
 		// assert
 		assertEquals(10, result);
 	}
-	
+
 	@Test
 	public void pottyShouldBe10AtStart() {
 		// act
@@ -36,21 +36,14 @@ class VirtualPetTest {
 		// assert
 		assertEquals(10, result);
 	}
-	
-//@Test
-//public void hungerShouldDecreaseBy1AfterEat() {
-//	// act
-//	int beforeEat = underTest.getHunger();
-//	underTest.eat(); // void - just eats
-//	int result = underTest.getHunger();
-//	// assert
-//	assertEquals(beforeEat - 1, result);
-//}
-	//@Test
-	//public void thirstShouldBe0AtStart() {
-		// act
-		//int result = underTest.getSleep(); // makes a method in VP2 class
-		// assert
-		//assertEquals(0, result);
-	}
-//}
+
+@Test
+public void eatShouldIncreaseBy1AfterEat() {
+	// act
+	int afterEat = underTest.forEat();
+	//underTest.forEat(); // void - just eats
+	int result = underTest.forEat();
+	// assert
+	assertEquals(afterEat, result);
+}
+}

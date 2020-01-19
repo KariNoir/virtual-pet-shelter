@@ -21,3 +21,4 @@ Every 20 seconds all instances decrease by 1; If Sleep is 0 then dead; If Eat is
 No Methods should be higher than 10 or lower than 0;
 
 10 is good, 0 is bad
+# virtual-pet-shelter2

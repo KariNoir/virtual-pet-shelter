@@ -25,4 +25,9 @@ public class ShelterPet {
 		
 	}
 
+	public void put(String petName2, ShelterPet pet) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

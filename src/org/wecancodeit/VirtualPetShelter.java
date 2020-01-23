@@ -32,23 +32,29 @@ private static Object ShelterPet;
 public static void main(String[] args) {
 		
 		
-	Map<String, String> pets = new HashMap<String, String>();
+	Map<String, String> pets = new HashMap<int position, String, String>();
 
-		pets.put("Thor", "Big and brown and loves to sit on your lap");
-		pets.put("Red", "Green and brown with a red stripe on the side of her face");
-		pets.put("Cotton", "Fat, gray cat that loves to cuddle");
+	pet1 = new ShelterPet(1, "Thor", "Dog: Brown and friendly");
+	pet2 = new ShelterPet(2, "Cotton", "Cat: Fat and Fluffy");
+	pet3 = new ShelterPet(3, "Red", "Turtle: green and mean");
+
+	thePets.add(pet1);
+	thePets.add(pet2);
+	thePets.add(pet3);
+	
+}
 		//System.out.println("The students are " + students);
 		
 
-		Map<String, ShelterPet> pets = new HashMap<>();
+		Map<String,String> pets = new HashMap<String, String>();
 
 		public void add(ShelterPet pets) {
-			ShelterPet pet;
+			ShelterPet pet = null;
 			pets.put(pet.getPetName(), pet);
 			
 		}
 
-		ShelterPet findPet(String pets) {
+		ShelterPet findPet1(String pets) {
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -58,20 +64,20 @@ public static void main(String[] args) {
 			return;
 		}
 
-		public void close(ShelterPet, pet) {
+		public void close(ShelterPet pet) {
 			pets.remove(pet.getPetName(), pet);
 			
 		}
 
 		public void withdraw(String petName, int position) {
-			ShelterPet adoptedFromShelter = findPet(petName);
+			ShelterPet adoptedFromShelter = findPet1(petName);
 			adoptedFromShelter.withdraw(position);
 		}
 
 	
 		
 	
-}
+
 
 private static ShelterPet findPet(String petName) {
 	// TODO Auto-generated method stub

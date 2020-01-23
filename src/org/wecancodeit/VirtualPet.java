@@ -1,6 +1,9 @@
 //for the shelter
 package org.wecancodeit;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class VirtualPet {
 
 	// private String petName;
@@ -34,6 +37,18 @@ public class VirtualPet {
 		this.water = water;
 	}
 
+	public VirtualPet(String[] args) {
+		// TODO Auto-generated method stub
+	
+	Map<String, String> pets = new HashMap<String, String>();
+
+	pets.put("Red", "Green Turtle with red stripes.  She likes to sun bath");
+	pets.put("Thor", "Big brown dog.  He loves to sit in your lap!");
+	pets.put("Cotton", "Fat gray cat.  She loves to cuddle.");
+	}
+	//System.out.println("The shelter pets are " + pets);
+	
+	
 	public void tick() {
 		eat--;
 		sleep--;
@@ -58,31 +73,31 @@ public class VirtualPet {
 	}
 
 	public void fedPet() {
-//			return this.eat += 3;
-//			return this.sleep += 1;
-//			return this.water -= 4;
+			this.eat += 3;
+			this.sleep += 1;
+			this.water -= 4;
 		return;
 	}
 
 	public void getDrink() {
-//			return this.eat -= 2;
-//			return this.fun += 2;
-//			return this.water += 4;
+			this.eat -= 2;
+			this.fun += 2;
+			this.water += 4;
 		return;
 	}
 
 	public void haveFun() {
-//			return this.sleep -= 3;
-//			return this.eat -= 2;
-//			return this.fun += 4;
+			this.sleep -= 3;
+			this.eat -= 2;
+			this.fun += 4;
 		return;
 
 	}
 
 	public void getSleep() {
-//			return this.sleep += 2;
-//			return this.water -=2;
-//			return this.eat += 2;
+			this.sleep += 2;
+			this.water -=2;
+			this.eat += 2;
 		return;
 	}
 
@@ -97,3 +112,5 @@ public class VirtualPet {
 	}
 
 }
+
+
